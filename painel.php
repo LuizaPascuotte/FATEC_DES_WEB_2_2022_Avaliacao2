@@ -7,24 +7,30 @@
     <title>Painel</title>
 </head>
 <body>
-    Bem vindo ao Painel, <?php echo $_SESSION['email'];?>.
-    <h1>Cadastrar Usuário</h1>
-		<?php
-		if(isset($_SESSION['msg'])){
-			echo $_SESSION['msg'];
-			unset($_SESSION['msg']);
-		}
-		?>
-		<form method="POST" action="processa.php">
-			<label>Nome: </label>
-			<input type="text" name="nome" placeholder="Digite o nome completo"><br><br>
-			
-			<label>E-mail: </label>
-			<input type="email" name="email" placeholder="Digite o seu melhor e-mail"><br><br>
-			
-			<input type="submit" value="Cadastrar">
-		</form>
+    <h1>Bem vindo ao Painel, <?php echo $_SESSION['email'];?></h1>
 
+    <div class="wrapper">
+        <h2>Cadastrar</h2>
+        <p>Favor inserir os dados a seguir.</p>
+        <form action="save.php" method="post">
+            <div class="form-group">
+                <label>Nome musica</label>
+                <input type="text" name="nomeMusica" class="form-control">
+                <span class="help-block"></span>
+            </div>    
+            <div class="form-group">
+                <label>Cantor ou Banda</label>
+                <input type="text" name="CantorBanda" class="form-control" >
+                <span class="help-block"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Cadastrar">
+            </div>
+            <a href="decisao.php" class="btn btn-danger">Voltar</a>
+        </form>
+    </div>    
+</body>
+</html>
     <p>
         <a href="logout.php">Sair</a>
     </p>
