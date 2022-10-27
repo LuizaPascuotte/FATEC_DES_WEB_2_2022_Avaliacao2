@@ -1,0 +1,11 @@
+use alunos;
+create table usuarios(
+idUsuario int AUTO_INCREMENT unique ,
+usuario varchar(90) not null unique,
+senha varchar(20) not null UNIQUE,
+primary key(idUsuario)
+);
+
+
+create database albuMusical
+
