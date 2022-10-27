@@ -12,7 +12,7 @@
     <div class="wrapper">
         <h2>Cadastrar</h2>
         <p>Favor inserir os dados a seguir.</p>
-        <form action="save.php" method="post">
+        <form action="insert.php" method="post">
             <div class="form-group">
                 <label>Nome musica</label>
                 <input type="text" name="nomeMusica" class="form-control">
