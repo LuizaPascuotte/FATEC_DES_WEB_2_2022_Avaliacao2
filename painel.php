@@ -1,3 +1,12 @@
+<?php
+    if(!isset($_SESSION)) {
+        session_start();
+    }
+    if(!isset($_SESSION) || (!$_SESSION['loggedin'] == TRUE))
+    {
+        header("Location: index.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +16,7 @@
     <title>Painel</title>
 </head>
 <body>
-    <h1>Bem vindo ao Painel, <?php echo $_SESSION['email'];?></h1>
+    <h1>Bem vindo ao Painel, <?php $_SESSION['username'] ?></h1>
 
     <div class="wrapper">
         <h2>Cadastrar</h2>
