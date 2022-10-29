@@ -29,7 +29,7 @@
             </div>    
             <div class="form-group">
                 <label>Cantor ou Banda</label>
-                <input type="text" name="CantorBanda" class="form-control" >
+                <input type="text" name="cantorBanda" class="form-control" >
                 <span class="help-block"></span>
             </div>
             <div class="form-group">

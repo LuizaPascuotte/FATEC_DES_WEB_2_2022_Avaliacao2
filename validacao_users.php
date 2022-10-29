@@ -29,7 +29,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['username'] = $_POST['email'];
         
-            header("Location: painel.php");
+            header("Location: decisao.php");
 
 
         } else {
